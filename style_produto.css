@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    font-family:'Poppins',sans-serif;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #031321;
+
+
+}
+
+ /* MENU */
+ #menuprincipal{
+    left: 20%;
+    margin-left: -100px;
+    position: top center, fixed;
+    width: 800px;
+    margin:0px;
+    padding:0px;
+    position: fixed;
+    z-index:1000;
+}
+
+/*PRODUTO*/
+.prototipo{
+    display: none;
+}
+.todos_produtos{
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+}
+.container
+{
+
+    position:relative;
+}
+.container .carta
+{
+    position:relative;
+    width: 320px;
+    height:450px;
+    background:rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    overflow:hidden;
+    backdrop-filter: blur(5px);
+    margin-left: 10px;
+    margin-top: 90px;
+
+}
+.container .carta:hover
+{
+    transition: 1s;
+    box-shadow: 0 0 20px #21ecf3,0 0 30px #21ecf3,0 0 40px #21ecf3,0 0 100px #21ecf3;
+    height: 500px;
+}
+.container .carta:before
+{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #21ecf3;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out; 
+}
+.container .carta:hover:before
+{
+clip-path: circle(300px at 80% -20%);
+}
+.container .carta h5
+{
+    position: absolute;
+    top:30%;
+    left:-20%;
+    font-size: 8em;
+    font-weight: 800;
+    font-style: italic;
+    color:rgba(53, 142, 145, 0.15);
+    translate: 10px;
+    transform: translate(10%,-100%) rotate(55deg);
+    z-index: -1;
+    -webkit-transform: translate(10%,-100%) rotate(55deg);
+    -moz-transform: translate(10%,-100%) rotate(55deg);
+    -ms-transform: translate(10%,-100%) rotate(55deg);
+    -o-transform: translate(10%,-100%) rotate(55deg);
+    text-shadow: 0 10px #00000056;
+}
+.container .carta .caixa_img
+{
+    position: absolute;
+    top:50%;
+    transform: translate(-50%);
+    z-index: 100;
+    width: 100%;
+    height:200px;
+    transition: 0.5s;
+}
+.container .carta:hover .caixa_img
+{
+    top:0%;
+    transform:translateY(0%)
+}
+.container .carta .caixa_img img
+{
+    height:300px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-5deg);
+    width: 270px;
+}
+.container .carta .caixa_conteu
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition:1s;
+    z-index: 10;
+}
+.container .carta:hover .caixa_conteu
+{
+    height: 210px;
+}
+.container .carta .caixa_conteu h2
+{
+    position:relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #00ccff;
+    text-shadow: 0 0 10px #21ecf3,0 0 20px #21ecf3;
+}
+.container .carta .caixa_conteu .escolha,.container .carta .caixa_conteu .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:3px 10px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.container .carta:hover .caixa_conteu .escolha
+{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 1.5s;
+}
+.container .carta:hover .caixa_conteu .color
+{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 1.6s;
+}
+.container .carta .caixa_conteu .escolha h3,
+.container .carta .caixa_conteu .color h4
+{
+ color:#00ccff;
+ font-weight: 300;
+ font-size:14px;
+ text-transform:uppercase;
+ letter-spacing: 2px;
+ margin-right: 10px;
+ text-shadow: 0 0 10px #21ecf3,0 0 20px #21ecf3;
+}
+.container .carta .caixa_conteu .escolha span
+{
+    text-align: center;
+    line-height: 26px;
+    font-size:14px;
+    display:inline-block;
+    color: rgba(0,0,0,1);
+    background: rgba(0, 0, 0, 0.1);
+    margin:0 2px;
+    transition: 1.5s;
+    color: rgb(44, 153, 135);
+    cursor: pointer;
+    border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -ms-border-radius: 10px ;
+    -o-border-radius: 10px ;
+}
+.container .carta .caixa_conteu .escolha span:hover
+{
+    background:#00ccff;
+    box-shadow: 0 0 10px #21ecf3,0 0 20px #21ecf3,0 0 30px #21ecf3,0 0 40px #21ecf3;
+    color:#031321;
+}
+
+.container .carta .caixa_conteu .color span{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    margin: 0 2px;
+    cursor: pointer;
+    transition: 1.6s;
+}
+.container .carta .caixa_conteu .color span:hover{
+    box-shadow: 0 0 10px #21ecf3,0 0 20px #21ecf3,0 0 30px #21ecf3,0 0 40px #21ecf3;
+    cursor: pointer;
+}
+
+.container .carta .caixa_conteu .compra{
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight:600;
+    color:#00ccff;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+    z-index: 30000000;
+    cursor:pointer;
+
+}
+.container .carta .caixa_conteu .compra:hover{
+    background: #00ccff;
+    color:#031321;
+    box-shadow: 0 0 5px #21ecf3,0 0 10px #21ecf3,0 0 15px #21ecf3,0 0 20px #21ecf3;
+    cursor:pointer;
+}
+.container .carta:hover .caixa_conteu .compra{
+    opacity: 1;
+    transform: translateY(-0px);
+    transition-delay: 1.75s;
+}

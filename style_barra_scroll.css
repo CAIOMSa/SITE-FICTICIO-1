@@ -1,0 +1,12 @@
+::-webkit-scrollbar{
+    width:0px;
+}
+#progressbar
+{
+    position:fixed;
+    top:0;
+    right:0;
+    width: 10px;
+    height: 0%;
+    background: #00ccff;
+}

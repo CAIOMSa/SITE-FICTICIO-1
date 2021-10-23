@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #031321;
+    font-family:'Poppins',sans-serif;
+}
+ /* MENU */
+ #menuprincipal{
+    width: 700px;
+    margin:0px;
+    padding:0px;
+    position: fixed;
+    z-index:15;
+}
+/*CAIXA DE TEXTO*/
+.box{
+    margin-top: 10px;
+    position: relative;
+    width: 700px;
+    height:1000px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: top center;
+    word-wrap: break-word;
+}
+.box::before{
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    transform: skewX(2deg) skewY(4deg);
+    background: linear-gradient(315deg,#00ccff,#031321,#00ccff);
+}
+.box::after{
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    transform: skewX(2deg) skewY(4deg);
+    background: linear-gradient(315deg,#00ccff,#031321,#00ccff);
+    filter:blur(100px);
+    box-shadow: 0 0 1px #21ecf3,0 0 2px #21ecf3;
+
+}
+.box span{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:#031321;
+    z-index:10;
+}
+/* FORMAS DE TEXTO*/
+.titulo{
+    position: absolute;
+    z-index:11;
+    font-size: 40px;
+    color: #21ecf3;
+    text-shadow: 0 0 2px #21ecf3,0 0 4px #21ecf3;
+}
+.txt_grande{
+    position: relative;
+    z-index:11;
+    font-size: 25px;
+    color: #21ecf3;
+    text-shadow: 0 0 2px #21ecf3,0 0 4px #21ecf3;
+}
+.txt_pequeno{
+    position: relative;
+    z-index:11;
+    font-size: 20px;
+    color: #21ecf3;
+    text-shadow: 0 0 2px #21ecf3,0 0 4px #21ecf3;
+}
+/* forms */
+form{
+    position: relative;
+    z-index: 11;
+}
+input{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 400px;
+    background:rgba(0, 0, 0, 0.1);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #21ecf3;
+    box-shadow:0 0 10px #21ecf3;
+}
+input::placeholder{
+    color: #21ecf3;
+    text-shadow: 0 0 3px #21ecf3;
+}
+textarea{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 400px;
+    background:rgba(0, 0, 0, 0.1);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #21ecf3;
+    box-shadow:0 0 10px #21ecf3;
+}
+textarea::placeholder{
+    color: #21ecf3;
+    text-shadow: 0 0 3px #21ecf3;
+}

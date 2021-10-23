@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+body
+{
+    overflow: hidden;
+}
+ /* MENU */
+ #menuprincipal{
+    left: 25%;
+    margin-left: -100px;
+    width: 600px;
+    margin:0px;
+    padding:0px;
+    position: fixed;
+    z-index:15;
+}
+/*FORMULARIO DE LOGIN*/
+section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #031321,#031321);
+
+}
+section .color{
+    position: absolute;
+    filter: blur(150px);
+}
+section .color:nth-child(1)
+{
+    top: -350px;
+    width: 100%;
+    height:100%;
+    background: #02111f;
+
+}
+section .color:nth-child(2)
+{
+    bottom: -150px;
+    left:100px;
+    width: 500px;
+    height:500px;
+    background: #010d18;
+
+}
+section .color:nth-child(3)
+{
+    bottom: 50px;
+    right: 100px;
+    width: 300px;
+    height:300px;
+    background: #010d18;
+
+}
+.caixa
+{
+    position: relative;
+}
+.caixa .quadrado
+{
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px #21ecf3,0 0 20px #21ecf3,0 0 30px #21ecf3,0 0 50px #21ecf3;
+    border: 1px solid rgba(0, 225, 255, 0.2);
+    border-right: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(26, 26, 26);
+    background: rgba(255,255,255,0.1);
+    border-radius:10px ;
+    animation: animate 10s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+@keyframes animate {
+    0%,100% { 
+        transform: translateY(-40px)
+    }
+    50% { 
+        transform: translateY(40px)
+    }
+}
+.caixa .quadrado:hover{
+    background:#21ecf3;
+    box-shadow: 0 0 30px #21ecf3,0 0 60px #21ecf3,0 0 90px #21ecf3;
+    border: 1px solid rgba(0, 225, 255, 0.2);
+    border-right: 1px solid rgba(0, 225, 255, 0.2);
+    border-bottom: 1px solid rgba(0, 225, 255, 0.2);
+}
+.caixa .quadrado:nth-child(1)
+{
+    top: -50px;
+    right: -60px;
+    width: 100px;
+    height: 100px;
+
+}
+.caixa .quadrado:nth-child(2)
+{
+    top: 150px;
+    left: -100px;
+    width: 120px;
+    height: 100px;
+    z-index: 2;
+}
+.caixa .quadrado:nth-child(3)
+{
+    bottom: 50px;
+    right: -60px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+.caixa .quadrado:nth-child(4)
+{
+    bottom: -80px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+}
+.caixa .quadrado:nth-child(5)
+{
+    top: -80px;
+    left: 100px;
+    width: 60px;
+    height: 60px;
+
+}
+.conteiner{
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.form{
+    position: relative;
+    width:100%;
+    height: 100%;
+    padding: 40px;
+}
+.form h2{
+    position: relative;
+    color: #21ecf3;
+    font-size:25px;
+    font-weight: 600;
+    letter-spacing:1px;
+    margin-bottom: 40px;
+    text-shadow:0 0 2px #21ecf3;
+}
+.form h2:before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom:-10px;
+    width: 40px;
+    height: 4px;
+    background: #21ecf3;
+    box-shadow:0 0 2px #21ecf3;
+}
+.form .caixa_entrada
+{
+    width: 100%;
+    margin-top:20px;
+}
+.form .caixa_entrada input
+{
+    width: 100%;
+    margin-top: 10px;
+    background:rgba(0, 0, 0, 0.1);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #21ecf3;
+    box-shadow:0 0 10px #21ecf3;
+}
+.form .caixa_entrada input::placeholder
+{
+    color: #21ecf3;
+    text-shadow: 0 0 3px #21ecf3;
+}
+.form .caixa_entrada input[type="submit"]
+{
+    background: rgba(0, 0, 0, 0.2);
+    color: #21ecf3;
+    text-shadow: 0 0 3px #21ecf3;
+    max-width: 100px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.esqueceu
+{
+    margin-top:5px;
+    color: #21ecf3;
+    text-shadow: 0 0 2px #21ecf3;
+}
+.esqueceu a
+{
+    color: #21ecf3;
+    text-shadow: 0 0 10px #21ecf3;
+    font-weight: 600;
+}

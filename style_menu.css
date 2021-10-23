@@ -1,0 +1,80 @@
+
+ /* MENU */
+#menuprincipal{
+    width: 100%;
+    margin:0px;
+    padding:0px;
+
+}
+.menu{
+    position: fixed;
+}
+.botao_neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color:#21ecf3;
+    text-shadow: 0 0 5px #21ecf3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition:0.2s;
+    height:50px;
+    background-color:rgba(255, 0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.botao_neon:hover{
+    color: #25847c;
+    background:#21ecf3;
+    box-shadow: 0 0 5px #21ecf3,0 0 10px #21ecf3,0 0 15px #21ecf3;
+    transition-delay: 0.25s;
+}
+.botao_neon span{
+    position: absolute;
+    display: block;
+}
+.botao_neon span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#21ecf3);
+}
+.botao_neon:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}        
+ /* ICONES */
+#icons{
+    font-size: 40px;
+}
+.user{
+    display: none;
+}
+/*CAIXA DE TEXTO*/
+.box{
+    position: relative;
+    width: 700px;
+    height:400px;
+    background: #fff;
+}
+.box::before{
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linear-gradient(315deg,#00ccff,#031321,#00ccff);
+}

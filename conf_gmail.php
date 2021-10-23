@@ -15,12 +15,12 @@ try {
 	$mail->isSMTP();
 	$mail->Host = 'smtp.gmail.com';
 	$mail->SMTPAuth = true;
-	$mail->Username = '013472010@eniac.edu.br';
-	$mail->Password = '013472010';
+	$mail->Username = 'EMAIL';
+	$mail->Password = 'SENHA';
 	$mail->Port = 587;
  
-	$mail->setFrom('013472010@eniac.edu.br');
-	$mail->addAddress('caiosaes@gmail.com');
+	$mail->setFrom('EMAIL');
+	$mail->addAddress('EMAIL');
  
 	$mail->isHTML(true);
 	$mail->Subject = $titulo;
@@ -35,5 +35,5 @@ try {
 } catch (Exception $e) {
 	echo "Erro ao enviar mensagem: {$mail->ErrorInfo}";
 }
-echo "<meta http-equiv='refresh' content='10;URL=http://localhost/teste_projetoexemplar/projeto_exemplar/index_ajuda.htm'>";
+echo "<meta http-equiv='refresh' content='10;URL=http://localhost/teste/index_ajuda.php'>";
 ?>

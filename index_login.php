@@ -67,7 +67,7 @@ unset($_SESSION['nao_autenticado']);
 <input type="submit" name="logout"value="logout">
 </div>
 <p class="esqueceu">Esqueceu a senha?<a href="http://#">infelizmente, sim!</a></p>
-<p class="esqueceu">Ainda não se cadastrou?<a href="http://localhost/teste_projetoexemplar/projeto_exemplar/index_criar_conta.php">cadastre-se</a></p>
+<p class="esqueceu">Ainda não se cadastrou?<a href="http://localhost/teste/index_criar_conta.php">cadastre-se</a></p>
 </form>
 </div>
 </div>

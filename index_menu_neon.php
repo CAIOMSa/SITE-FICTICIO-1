@@ -10,20 +10,20 @@
 <span></span>
 <i id="icons" class="fas fa-home casa"></i>
 </a>
-<a id="icons" class= 'botao_neon'href="http://localhost/teste_projetoexemplar/projeto_exemplar/index_ajuda.php" target="_blank">
+<a id="icons" class= 'botao_neon'href="http://localhost/teste/index_ajuda.php" target="_blank">
 <span></span>
 <i id="icons" class="fas fa-question-circle ajuda"></i>
 </a>
-<a id="icons" class= 'botao_neon'href="http://localhost/teste_projetoexemplar/projeto_exemplar/index_produtos.php" target="_blank">
+<a id="icons" class= 'botao_neon'href="http://localhost/teste/index_produtos.php" target="_blank">
 <span></span>
 <i id="icons" class="fas fa-shopping-cart carrinho"></i>
 </a>
-<a id="icons" class= 'botao_neon'href="http://localhost/teste_projetoexemplar/projeto_exemplar/index_login.php" target="_blank">
+<a id="icons" class= 'botao_neon'href="http://localhost/teste/index_login.php" target="_blank">
 <span></span>
 <i id="icons" class="fas fa-user-lock userl"></i>
 <i id="icons" class="fas fa-user user"></i>
 </a>
-<a class= 'botao_neon'href="http://localhost/teste_projetoexemplar/projeto_exemplar/index_mapa.php" target="_blank">
+<a class= 'botao_neon'href="http://localhost/teste/index_mapa.php" target="_blank">
 <span></span>
 <i id="icons" class="fas fa-map-marked-alt mapa"></i>
 </a>
